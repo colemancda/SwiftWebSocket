@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03D1E7021B20897100AC49AC"
+               BlueprintIdentifier = "1A44AD131B991AB700709E1E"
                BuildableName = "SwiftWebSocket.framework"
-               BlueprintName = "SwiftWebSocket-iOS"
+               BlueprintName = "SwiftWebSocket-WatchOS"
                ReferencedContainer = "container:SwiftWebSocket.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "03D1E7021B20897100AC49AC"
+            BlueprintIdentifier = "1A44AD131B991AB700709E1E"
             BuildableName = "SwiftWebSocket.framework"
-            BlueprintName = "SwiftWebSocket-iOS"
+            BlueprintName = "SwiftWebSocket-WatchOS"
             ReferencedContainer = "container:SwiftWebSocket.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "03D1E7021B20897100AC49AC"
+            BlueprintIdentifier = "1A44AD131B991AB700709E1E"
             BuildableName = "SwiftWebSocket.framework"
-            BlueprintName = "SwiftWebSocket-iOS"
+            BlueprintName = "SwiftWebSocket-WatchOS"
             ReferencedContainer = "container:SwiftWebSocket.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
