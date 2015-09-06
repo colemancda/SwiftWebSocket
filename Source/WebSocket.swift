@@ -193,6 +193,7 @@ public struct WebSocketService :  OptionSetType {
 }
 
 /// WebSocket objects are bidirectional network streams that communicate over HTTP. RFC 6455.
+@available(OSX 10.10, iOS 8.0, *)
 public class WebSocket: Hashable {
     private var id : Int
     private var mutex = pthread_mutex_t()
@@ -1166,6 +1167,7 @@ public class WebSocket: Hashable {
         sendFrame(f)
     }
 }
+@available(OSXApplicationExtension 10.10, *)
 public func ==(lhs: WebSocket, rhs: WebSocket) -> Bool {
     return lhs.id == rhs.id
 }
@@ -1209,6 +1211,7 @@ public enum WebSocketError : ErrorType, CustomStringConvertible {
     }
 }
 
+@available(OSX 10.10, *)
 private class Delegate : NSObject, NSStreamDelegate {
     @objc func stream(aStream: NSStream, handleEvent eventCode: NSStreamEvent){
         manager.signal()
@@ -1473,6 +1476,7 @@ private class UTF8 {
 // Manager class is used to minimize the number of dispatches and cycle through network events
 // using fewers threads. Helps tremendously with lowing system resources when many conncurrent
 // sockets are opened.
+@available(OSX 10.10, *)
 private class Manager {
     var once = dispatch_once_t()
     var mutex = pthread_mutex_t()
@@ -1530,4 +1534,5 @@ private class Manager {
     }
 }
 
+@available(OSXApplicationExtension 10.10, *)
 private let manager = Manager()
